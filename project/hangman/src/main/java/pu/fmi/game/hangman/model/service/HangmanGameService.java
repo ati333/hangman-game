@@ -19,6 +19,9 @@ public class HangmanGameService {
   private static final String PLACEHOLDER_SYMBOL = "_";
 
   private List<HangmanGame> storedGamesCollection = new ArrayList<>();
+  public List<HangmanGame> getAllGames() {
+    return storedGamesCollection;
+  }
 
   private GenericWordProvider wordProvider;
   private GameProperties gameProperties;
